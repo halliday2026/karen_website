@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="About" description="Learn about Karen Zaragoza and her approach to helping local businesses grow through AI, systems, and community-based events.">
+  <Hero
+    title="About Karen"
+    subtitle="Helping local businesses grow through better workflows, intentional experiences, and human-centered design."
+  />
+
+  <Section>
+    <div class="max-w-3xl mx-auto">
+      <div class="prose prose-lg">
+        <p class="text-xl text-gray-600 leading-relaxed mb-8">
+          I work at the intersection of community, systems, and AI. My focus is helping local businesses grow through better workflows, intentional experiences, and human-centered design — both online and offline.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">My Approach</h2>
+
+        <div class="space-y-6 text-gray-600">
+          <p>
+            Too often, small businesses are sold tools without strategy. They end up with a CRM they don't use, a website that doesn't convert, and marketing that feels disconnected from their actual community.
+          </p>
+          <p>
+            I take a different approach. I start by understanding how your business actually works — your customer journey, your team's capacity, and your community relationships. Then I help you build systems that support real growth, not just busywork.
+          </p>
+          <p>
+            Whether it's optimizing your website for local SEO, designing events that generate content and partnerships, or implementing AI tools that actually save time — everything I do is focused on making your business work smarter.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">What Sets Me Apart</h2>
+
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="text-primary-600 font-bold mr-3">→</span>
+            <span class="text-gray-700"><strong>Systems thinking:</strong> I see how all the pieces connect — your website, CRM, email, events, and customer experience.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-primary-600 font-bold mr-3">→</span>
+            <span class="text-gray-700"><strong>AI-powered optimization:</strong> I use AI to analyze, automate, and improve — not to replace the human touch.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-primary-600 font-bold mr-3">→</span>
+            <span class="text-gray-700"><strong>Community focus:</strong> Real relationships drive real growth. Events and local engagement are core to my strategy.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section bgColor="primary">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Let's Work Together
+      </h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
+        Ready to optimize your business with AI, systems, and community-driven growth?
+      </p>
+      <a
+        href="/contact"
+        class="inline-block bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
+      >
+        Book a Strategy Call
+      </a>
+    </div>
+  </Section>
+</BaseLayout>

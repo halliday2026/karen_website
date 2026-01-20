@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="Services" description="AI-Powered Business Audits and Event Design for Growth. Strategic services to help your business convert leads and build community trust.">
+  <Hero
+    title="Services"
+    subtitle="Strategic services designed to optimize your business and drive real growth."
+  />
+
+  <Section>
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+        <div class="bg-primary-700 text-white p-6">
+          <h2 class="text-2xl font-bold">AI-Powered Business Audit</h2>
+          <p class="text-primary-100 mt-2">A deep dive into your website, CRM, and customer journey</p>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 mb-6">
+            Get a comprehensive analysis of your digital presence and customer experience. I'll identify where leads are leaking, where automation can help, and what changes will have the biggest impact.
+          </p>
+          <h3 class="font-semibold text-gray-900 mb-4">What's included:</h3>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">Website & CRM review</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">Lead flow analysis</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">Automation opportunities</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">Clear next steps</span>
+            </li>
+          </ul>
+          <a
+            href="/contact"
+            class="inline-block w-full text-center bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+        <div class="bg-primary-700 text-white p-6">
+          <h2 class="text-2xl font-bold">Event Design for Growth</h2>
+          <p class="text-primary-100 mt-2">Strategic events that drive SEO, content, and community</p>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 mb-6">
+            Events aren't just about showing up — they're a powerful engine for content, partnerships, and trust. I help you design events that work for your business goals.
+          </p>
+          <h3 class="font-semibold text-gray-900 mb-4">Events designed to support:</h3>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">SEO & content creation</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">Email list growth</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">Partnerships & sponsorships</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-3">✓</span>
+              <span class="text-gray-700">Community trust</span>
+            </li>
+          </ul>
+          <a
+            href="/contact"
+            class="inline-block w-full text-center bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <Section bgColor="gray">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Discovery Call</h3>
+          <p class="text-gray-600 text-sm">We discuss your business, challenges, and goals.</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Analysis & Strategy</h3>
+          <p class="text-gray-600 text-sm">I dive deep into your systems and create a plan.</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Implementation</h3>
+          <p class="text-gray-600 text-sm">We execute the strategy together for real results.</p>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <Section bgColor="primary">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Ready to Get Started?
+      </h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
+        Book a free strategy call to discuss how I can help your business grow.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
+      >
+        Book a Strategy Call
+      </a>
+    </div>
+  </Section>
+</BaseLayout>

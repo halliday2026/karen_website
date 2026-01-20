@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+---
+
+<BaseLayout title="Home">
+  <Hero
+    title="AI-Powered Systems & Events That Turn Community Into Clients"
+    subtitle="I help small businesses optimize their CRM, website, and in-person experiences so marketing actually converts."
+    ctaText="Book a Strategy Call"
+    ctaHref="/contact"
+  />
+
+  <Section title="What I Do" bgColor="gray">
+    <div class="grid md:grid-cols-3 gap-8">
+      <ServiceCard
+        icon="🔍"
+        title="AI Business Analysis"
+        description="I audit your CRM, website, and workflows to identify where leads are leaking and how AI and automation can improve conversion and save time."
+      />
+      <ServiceCard
+        icon="🎯"
+        title="Event-Driven Growth"
+        description="I design intentional, community-based events that support SEO, content creation, partnerships, and real-world trust."
+      />
+      <ServiceCard
+        icon="⚙️"
+        title="Systems & Optimization"
+        description="I connect your website, CRM, email, and events into one cohesive system so nothing operates in isolation."
+      />
+    </div>
+  </Section>
+
+  <Section title="Why Events + SEO Work Together">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-lg text-gray-600 mb-8 text-center">
+        SEO brings attention. Events build trust.<br />
+        Together, they create stronger engagement, better content, and higher conversions.
+      </p>
+      <div class="bg-primary-50 rounded-xl p-8">
+        <h3 class="font-semibold text-gray-900 mb-4">Events generate:</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <span class="text-primary-600 mr-3">✓</span>
+            <span class="text-gray-700">Real content for your website and socials</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-primary-600 mr-3">✓</span>
+            <span class="text-gray-700">Backlinks and brand signals</span>
+          </li>
+          <li class="flex items-start">
+            <span class="text-primary-600 mr-3">✓</span>
+            <span class="text-gray-700">Community trust that improves conversion</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section title="Who This Is For" bgColor="gray">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+        <div class="text-3xl mb-3">🏪</div>
+        <p class="font-medium text-gray-800">Local service businesses</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+        <div class="text-3xl mb-3">🤝</div>
+        <p class="font-medium text-gray-800">Community-based brands</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+        <div class="text-3xl mb-3">💻</div>
+        <p class="font-medium text-gray-800">Business owners overwhelmed by tech</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+        <div class="text-3xl mb-3">🚀</div>
+        <p class="font-medium text-gray-800">Teams not yet using AI but ready to learn</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section bgColor="primary">
+    <div class="text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Ready to Optimize Your Business?
+      </h2>
+      <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
+        Let's talk about how AI, systems, and events can work together to grow your business.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
+      >
+        Book a Strategy Call
+      </a>
+    </div>
+  </Section>
+</BaseLayout>
