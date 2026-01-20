@@ -1,9 +1,11 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
-  { href: '/contact', label: 'Contact' },
+  { href: `${base}`, label: 'Home' },
+  { href: `${base}about`, label: 'About' },
+  { href: `${base}services`, label: 'Services' },
+  { href: `${base}contact`, label: 'Contact' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -12,7 +14,7 @@ const currentPath = Astro.url.pathname;
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <a href="/" class="text-xl font-bold text-primary-700 hover:text-primary-800 transition-colors">
+      <a href={base} class="text-xl font-bold text-primary-700 hover:text-primary-800 transition-colors">
         Karen Zaragoza
       </a>
 
@@ -31,7 +33,7 @@ const currentPath = Astro.url.pathname;
           </a>
         ))}
         <a
-          href="/contact"
+          href={`${base}contact`}
           class="bg-accent-500 hover:bg-accent-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
         >
           Book a Call
@@ -64,7 +66,7 @@ const currentPath = Astro.url.pathname;
         </a>
       ))}
       <a
-        href="/contact"
+        href={`${base}contact`}
         class="block mt-2 bg-accent-500 hover:bg-accent-600 text-white px-4 py-2 rounded-lg text-sm font-medium text-center transition-colors"
       >
         Book a Call

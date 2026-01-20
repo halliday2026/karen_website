@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import Section from '../components/Section.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="About" description="Learn about Karen Zaragoza and her approach to helping local businesses grow through AI, systems, and community-based events.">
@@ -60,7 +62,7 @@ import Section from '../components/Section.astro';
         Ready to optimize your business with AI, systems, and community-driven growth?
       </p>
       <a
-        href="/contact"
+        href={`${base}contact`}
         class="inline-block bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
       >
         Book a Strategy Call
