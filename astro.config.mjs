@@ -3,6 +3,7 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://halliday2026.github.io',
-  base: '/karen_website',
+  base: '/karen_website/',
+  trailingSlash: 'always',
   integrations: [tailwind()],
 });
